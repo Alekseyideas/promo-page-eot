@@ -58,12 +58,29 @@ input {
   color: #435466;
   position: relative;
   text-decoration: underline;
+  position: relative;
+  z-index: 1;
 
   &.active {
     font-size: 22px;
     font-weight: 500;
     line-height: 1.18;
     text-decoration: none;
+
+    @include minLg() {
+      &::after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 1px;
+        background: #d0021b;
+        position: absolute;
+        left: 100%;
+        margin-left: 20px;
+        top: 15px;
+      }
+    }
+
   }
 }
 

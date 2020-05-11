@@ -19,13 +19,13 @@ $('document').ready(() => {
     console.log($('.site img').height());
     switch (+slideno) {
       case 2:
-        return fnGoTOSlide(50);
+        return fnGoTOSlide(0);
       case 3:
-        return fnGoTOSlide(900);
+        return fnGoTOSlide(650);
       case 4:
-        return fnGoTOSlide(600);
+        return fnGoTOSlide(2500);
       case 5:
-        return fnGoTOSlide(1200);
+        return fnGoTOSlide(3370);
       case 6:
         return fnGoTOSlide($('.site img').height());
       default:
@@ -34,7 +34,6 @@ $('document').ready(() => {
 
     function fnGoTOSlide(n) {
       // $('.site').animate({ scrollTop: $('.site').scrollTop() + n });
-      console.log();
       $('.site').animate({
         scrollTop: n,
       });
@@ -44,5 +43,10 @@ $('document').ready(() => {
     //   'slickGoTo',
     //   +slideno > 3 ? slideno - 2 : slideno - 1
     // );
+  });
+
+  $('.slideRev').slick({
+    infinite: true,
+    autoplay: true,
   });
 });
