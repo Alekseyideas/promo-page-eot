@@ -19,13 +19,13 @@ $('document').ready(() => {
     console.log($('.site img').height());
     switch (+slideno) {
       case 2:
-        return fnGoTOSlide(0);
+        return fnGoTOSlide(140);
       case 3:
         return fnGoTOSlide(650);
       case 4:
-        return fnGoTOSlide(2500);
+        return fnGoTOSlide(2350);
       case 5:
-        return fnGoTOSlide(3370);
+        return fnGoTOSlide(3500);
       case 6:
         return fnGoTOSlide($('.site img').height());
       default:

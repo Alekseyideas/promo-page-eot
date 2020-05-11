@@ -20,6 +20,7 @@
   .site {
     max-height: 800px;
     overflow: hidden;
+    margin-top: 28px;
 
     @include maxLg() {
       font-size: 25px;
